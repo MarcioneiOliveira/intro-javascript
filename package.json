@@ -10,11 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/MarcioneiOliveira/intro-javascript.git"
   },
-  "keywords": ["Revisão javascript"],
+  "keywords": [
+    "Revisão javascript"
+  ],
   "author": "Marcionei Oliveira",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MarcioneiOliveira/intro-javascript/issues"
   },
-  "homepage": "https://github.com/MarcioneiOliveira/intro-javascript#readme"
+  "homepage": "https://github.com/MarcioneiOliveira/intro-javascript#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
