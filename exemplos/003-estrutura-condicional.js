@@ -1,8 +1,8 @@
-let entrada = required('prompt-sync')();
+let entrada = require('prompt-sync')();
 
 let idade = entrada('Digite sua idade');
 
-if (idade === 18) {
+if (idade == 18) {
     console.log('Você pode se matricular na auto-escola');
 }
 
@@ -13,4 +13,18 @@ if (idade > 18) {
 if (idade < 18) {
      console.log('Você não tem idade para dirigir!');
 }
-console.log('A idade digitada é: ' + idade);
+//console.log('A idade digitada é: ' + idade);
+
+if (idade > 18) {
+    console.log ('Você tem idade para dirigir caso tenha a Habilitação.');
+} else if ( idade < 18 ){
+    console.log ('Você não tem idade para dirigir.')
+} else { 
+    console.log ('Você pode se matricular na auta-escola');
+}
+
+if (idade >=18) {
+    console.log ('Maior');
+} else {
+    console.log('Menor');
+}
