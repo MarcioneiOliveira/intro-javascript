@@ -29,6 +29,7 @@ do {
     console.log('5 - Excluir tarefa');
     console.log('0 - Encerrar');
     opcao = entrada('Selecione uma opção:');
+    console.clear()
 
     if (opcao == 1) {
         console.log('Tarefas pendentes:');
@@ -39,13 +40,22 @@ do {
         });
     }
 
+
     if (opcao == 2) {
-        console.log('Tarefas realizadas:');
-        tarefas.forEach(function(tarefa) {
-            if (tarefa.realizada) {
-                console.log(`${tarefa.id} - ${tarefa.tarefa}`);
+        // console.log('Tarefas realizadas:');
+        // tarefas.forEach(function(tarefa) {
+        //     if (tarefa.realizada) {
+        //         console.log(`${tarefa.id} - ${tarefa.tarefa}`);
+        //     }
+        // });
+        console.log('Tarefas realizadas');
+        for (const i in tarefas){
+            if (tarefas[i].realizada == true) {
+                console.log('ID: ' + tarefas[i].id);
+                console.log('TAREFA: ' + tarefas[i].tarefa);
+                console.log('REALIZADA: ' + (tarefas[i].realizada ? 'Sim' : 'Não'));
             }
-        });
+        }
     }
 
     if (opcao == 3) {
