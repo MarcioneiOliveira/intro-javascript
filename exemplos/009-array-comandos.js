@@ -29,7 +29,11 @@ do {
     console.log('5 - Excluir tarefa');
     console.log('0 - Encerrar');
     opcao = entrada('Selecione uma opção:');
+<<<<<<< Updated upstream
     console.clear()
+=======
+    console.log('-----------------')
+>>>>>>> Stashed changes
 
     if (opcao == 1) {
         console.log('Tarefas pendentes:');
