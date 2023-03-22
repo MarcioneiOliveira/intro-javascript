@@ -108,6 +108,20 @@ do {
         const t_excluir = entrada('Insira o ID da tarefa a ser excluída: ');
         let tempArray = tarefas;
         tarefas = tempArray.filter(item => item.id != t_excluir);
+        // if (t_excluir != [tempArray]){
+        //         console.log ('Digite um ID Válido')
+                
+        // }
+
+        if (t_excluir <= 0 || t_excluir > tarefas.length || isNaN(t_excluir)) {
+            console.log('Digite um ID válido!');
+        } 
+        else
+
+        else {
+            tarefas = tarefas.filter(item => item.id != t_excluir);
+            console.log('Tarefa excluída com sucesso!');
+        }
 
         // resetar o array
         tempArray = [];
