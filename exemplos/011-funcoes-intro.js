@@ -23,3 +23,18 @@ function olaNome (nome = 'não foi inserido um nome') {
 function soma (n1 = 0, n2 = 0) {
     return n1 + n2;
 }
+
+//chamando funcoes
+// função sem parâmetro e sem retorno
+data();
+
+// função sem parâmetro e com retorno
+const cAleatorio = caracterAleatorio();
+console.log(cAleatorio);
+
+// função com parâmetro sem retorno
+olaNome('Everton');
+
+// função com parâmetro com retorno
+const resultado = soma(1,5);
+console.log(resultado);
